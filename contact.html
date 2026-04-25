@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — FinSmart Étudiant</title>
+  <meta name="description" content="Contactez l'équipe FinSmart pour toute question sur le système de gestion financière." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💰</text></svg>" />
+</head>
+<body>
+
+  <!-- ====================================================
+       NAVIGATION
+       ==================================================== -->
+  <nav class="navbar" role="navigation" aria-label="Menu principal">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">💰</div>
+      <span>Fin<span>Smart</span></span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="about.html">À propos</a></li>
+      <li><a href="features.html">Fonctionnalités</a></li>
+      <li><a href="contact.html" class="btn-nav active">Contact</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ====================================================
+       HERO PAGE CONTACT
+       ==================================================== -->
+  <section class="contact-hero">
+    <span class="section-badge fade-in">Parlons-en</span>
+    <h1 class="section-title fade-in fade-in-delay-1">Contactez-nous</h1>
+    <p class="section-subtitle fade-in fade-in-delay-2">
+      Une question, une suggestion ou un retour sur le projet FinSmart ?
+      Nous sommes à votre écoute.
+    </p>
+  </section>
+
+  <!-- ====================================================
+       SECTION FORMULAIRE + INFOS
+       ==================================================== -->
+  <section class="contact-section">
+
+    <div class="contact-wrapper">
+
+      <!-- Informations de contact -->
+      <div class="contact-info fade-in">
+        <h3>Informations</h3>
+        <p>
+          FinSmart est un projet académique développé dans le cadre du cursus
+          de Licence 2 en Informatique. Nous sommes ouverts à tout échange
+          constructif autour du projet.
+        </p>
+
+        <div class="info-items">
+
+          <div class="info-item">
+            <div class="ii-icon">🏫</div>
+            <span>Université / Institut de formation</span>
+          </div>
+
+          <div class="info-item">
+            <div class="ii-icon">📧</div>
+            <span>finsmart.projet@email.com</span>
+          </div>
+
+          <div class="info-item">
+            <div class="ii-icon">📍</div>
+            <span>Département Informatique — Licence 2</span>
+          </div>
+
+          <div class="info-item">
+            <div class="ii-icon">🕐</div>
+            <span>Réponse sous 48h (jours ouvrables)</span>
+          </div>
+
+        </div>
+
+        <!-- Liens rapides -->
+        <div style="margin-top:32px;">
+          <h4 style="color:var(--primary); font-family:'Sora',sans-serif; margin-bottom:14px; font-size:0.95rem;">
+            Navigation rapide
+          </h4>
+          <div style="display:flex; flex-direction:column; gap:10px;">
+            <a href="about.html" class="btn btn-outline" style="justify-content:center; font-size:0.88rem; padding:10px 20px;">
+              📖 À propos du projet
+            </a>
+            <a href="features.html" class="btn btn-primary" style="justify-content:center; font-size:0.88rem; padding:10px 20px;">
+              ⚡ Voir les fonctionnalités
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulaire de contact -->
+      <div class="fade-in fade-in-delay-1">
+        <form class="contact-form" id="contactForm" novalidate>
+
+          <h3 style="color:var(--primary); margin-bottom:24px; font-family:'Sora',sans-serif;">
+            Envoyez-nous un message
+          </h3>
+
+          <!-- Champ Nom -->
+          <div class="form-group">
+            <label for="nom">Votre nom complet <span style="color:#EF4444">*</span></label>
+            <input
+              type="text"
+              id="nom"
+              name="nom"
+              placeholder="Ex : Amina Diallo"
+              autocomplete="name"
+              required
+            />
+          </div>
+
+          <!-- Champ Email -->
+          <div class="form-group">
+            <label for="email">Adresse email <span style="color:#EF4444">*</span></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Ex : amina@example.com"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <!-- Champ Sujet -->
+          <div class="form-group">
+            <label for="sujet">Sujet</label>
+            <input
+              type="text"
+              id="sujet"
+              name="sujet"
+              placeholder="Ex : Question sur le projet"
+            />
+          </div>
+
+          <!-- Champ Message -->
+          <div class="form-group">
+            <label for="message">Votre message <span style="color:#EF4444">*</span></label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Décrivez votre demande, suggestion ou question..."
+              required
+            ></textarea>
+          </div>
+
+          <!-- Bouton d'envoi -->
+          <button type="submit" class="btn btn-accent" style="width:100%; justify-content:center;">
+            ✉️ Envoyer le message
+          </button>
+
+          <!-- Message de retour (JS) -->
+          <div id="formMessage" class="form-message" role="alert" aria-live="polite"></div>
+
+          <p style="font-size:0.78rem; color:var(--text-light); margin-top:12px; text-align:center;">
+            * Champs obligatoires — Vos données ne sont pas partagées avec des tiers.
+          </p>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====================================================
+       FAQ RAPIDE
+       ==================================================== -->
+  <section style="background:var(--light-bg); padding:70px 5%;">
+    <div class="text-center">
+      <span class="section-badge fade-in">FAQ</span>
+      <h2 class="section-title fade-in fade-in-delay-1">Questions fréquentes</h2>
+    </div>
+
+    <div style="max-width:700px; margin:40px auto 0; display:flex; flex-direction:column; gap:16px;">
+
+      <div class="problem-card fade-in" style="border-left-color:var(--primary);">
+        <h3 style="font-size:1rem; margin-bottom:8px;">❓ À qui s'adresse ce projet ?</h3>
+        <p>FinSmart est destiné aux étudiants bénéficiant d'une bourse d'études qui souhaitent mieux gérer leurs finances mensuelles.</p>
+      </div>
+
+      <div class="problem-card fade-in fade-in-delay-1" style="border-left-color:var(--primary);">
+        <h3 style="font-size:1rem; margin-bottom:8px;">❓ L'application est-elle disponible sur mobile ?</h3>
+        <p>Oui, l'interface est entièrement responsive et s'adapte aussi bien aux smartphones qu'aux ordinateurs.</p>
+      </div>
+
+      <div class="problem-card fade-in fade-in-delay-2" style="border-left-color:var(--primary);">
+        <h3 style="font-size:1rem; margin-bottom:8px;">❓ Mes données financières sont-elles sécurisées ?</h3>
+        <p>Absolument. Chaque compte est protégé par un système d'authentification sécurisé et les données sont chiffrées.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====================================================
+       FOOTER
+       ==================================================== -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <div class="logo-icon">💰</div>
+        <span>FinSmart Étudiant</span>
+      </div>
+      <nav class="footer-links">
+        <a href="index.html">Accueil</a>
+        <a href="about.html">À propos</a>
+        <a href="features.html">Fonctionnalités</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 FinSmart — Système Intelligent de Gestion d'Éducation Financière</p>
+      <p>Projet de fin d'études <span class="accent">Licence 2</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
